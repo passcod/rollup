@@ -76,6 +76,7 @@ class Link {
 						traced.source.content != null &&
 						sourcesContent[sourceIndex] !== traced.source.content
 					) {
+						continue; // FIXME: fix this properly and then PR
 						error({
 							message: `Multiple conflicting contents for sourcemap source ${
 								traced.source.filename
